@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Joel Choppavarapu: Resume</title>
+<style>
+@page{size:Letter;margin:.42in .5in}
+*{box-sizing:border-box}
+html{background:#e9e9e9}
+body{margin:0;font:10pt/1.24 "Latin Modern Roman","CMU Serif","Times New Roman",Times,serif;color:#000}
+.page{width:8.5in;min-height:11in;margin:18px auto;padding:.5in;background:#fff;box-shadow:0 2px 14px rgba(0,0,0,.2)}
+h1{margin:0;text-align:center;font-size:23pt;font-weight:400;font-variant:small-caps;letter-spacing:.02em}
+.contact{text-align:center;font-size:9.5pt;margin-top:2px}
+.contact a{color:#000;text-decoration:none}
+.contact span{padding:0 3px}
+h2{margin:8px 0 3px;font-size:11.5pt;font-weight:400;font-variant:small-caps;letter-spacing:.04em;border-bottom:1px solid #000;line-height:1.15;padding-bottom:1px}
+.row{display:flex;justify-content:space-between;gap:12px}
+.row b{font-weight:700}
+.row i{font-style:italic}
+.sub{margin-top:0}
+.entry{margin-top:5px}
+.entry:first-of-type{margin-top:2px}
+ul{margin:2px 0 0;padding-left:.2in}
+li{margin:1.4px 0;padding-left:1px}
+li::marker{font-size:8pt}
+.skills p{margin:1.5px 0}
+.ph{background:#fff3b0}
+.bar{position:fixed;top:12px;right:16px;font:13px system-ui,sans-serif}
+.bar button{padding:8px 14px;border:0;border-radius:6px;background:#111;color:#fff;cursor:pointer}
+@media print{html{background:#fff}.page{margin:0;padding:0;width:auto;min-height:0;box-shadow:none}.bar{display:none}.ph{background:none}}
+</style>
+</head>
+<body>
+<div class="bar"><button onclick="print()">Save as PDF</button></div>
+<div class="page">
+  <h1>Joel Choppavarapu</h1>
+  <div class="contact">
+    <a href="mailto:choppavarapujoel@gmail.com">choppavarapujoel@gmail.com</a><span>|</span>
+    <a href="https://www.linkedin.com/in/joel-choppavarapu-424691303/">linkedin.com/in/joel-choppavarapu-424691303</a><span>|</span>
+    <a href="https://github.com/Joel-Judson-Paul77">github.com/Joel-Judson-Paul77</a><span>|</span>
+    <a href="https://poptle.com">poptle.com</a>
+  </div>
+
+  <h2>Education</h2>
+  <div class="row"><b>NBKR Institute of Science and Technology</b><span>Andhra Pradesh, India</span></div>
+  <div class="row sub"><i>Bachelor of Technology in Computer Science and Engineering</i><span>Aug. 2024 to Jun. 2028</span></div>
+
+  <h2>Experience</h2>
+  <div class="entry">
+    <div class="row"><span><b>Founder and Product Engineer</b></span><span>Jul. 2026 to Present</span></div>
+    <div class="row sub"><i>POPTLE | Kotlin, Jetpack Compose, Room, Play Billing, Render</i><span>Remote</span></div>
+    <ul>
+      <li>Designed, built and launched an Android app on <b>Google Play</b> using Kotlin and Jetpack Compose that sorts every notification into 4 attention zones (Needs Action, People, Updates, Background) so important alerts are never buried</li>
+      <li>Architected a layered classification pipeline of deterministic rules, on-device AI and cloud AI as a last resort, keeping most decisions offline and server usage within free-tier limits</li>
+      <li>Built a trust layer that flags notifications engineered to impersonate real people</li>
+      <li>Integrated Google Play Billing with <b>server-side purchase verification</b> for Pro, instead of trusting a client-side flag</li>
+      <li>Deployed the backend on Render and the product site (poptle.com) on Vercel with automatic deploys from GitHub</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="row"><span><b>Data Science Intern</b></span><span>Jan. 2024 to Feb. 2024</span></div>
+    <div class="row sub"><i>Teachnook (Teachscape Online Learning Services)</i><span>Internship</span></div>
+    <ul>
+      <li>Completed the Data Science course and mentorship internship (with Cognizance'24 IIT Roorkee), covering data science fundamentals, Python and analytical problem-solving</li>
+    </ul>
+  </div>
+
+  <h2>Projects</h2>
+  <div class="entry">
+    <div class="row"><span><b>ResolveAI</b> | <i>n8n, Gemini API, Webhooks, JavaScript</i></span><span>2026</span></div>
+    <ul>
+      <li>Built an AI support-triage workflow on <b>n8n cloud</b>: a webhook receives a customer message, Gemini scores intent, urgency and sentiment, and the workflow routes it to the right action in <b>1 to 3 seconds</b></li>
+      <li>Tested every route end to end, then tightened the prompt's definitions of angry and urgent so escalations stop firing on ordinary complaints</li>
+      <li>Built a web console to send messages and see routing results; now extending the prototype toward a B2B product (persistence, order connectors, automated replies, widget)</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="row"><span><b>CloneX</b> | <i>Next.js, TypeScript, React, Tailwind, Vitest, n8n</i></span><span>Oct. 2026</span></div>
+    <ul>
+      <li>Co-built a <b>brand-impersonation monitor</b> with a team of five: it scans the Apple App Store, Google Play, Bluesky, Telegram and certificate-transparency logs for look-alikes and scores each from 0 to 100 with stated reasons</li>
+      <li>Measured accuracy on a held-out set the model had not seen: <b>87% precision, 76% recall, 81% F1</b>, and documented known limits in the README instead of reporting only the dev-set 100%</li>
+      <li>Added logo-hash matching with <i>sharp</i>, a <b>74-test Vitest suite</b> with CI, and an n8n takedown workflow where an analyst reviews each case before anything is sent</li>
+    </ul>
+  </div>
+
+  <h2>Hackathons and Achievements</h2>
+  <ul>
+    <li><b>Top 3 of 28 teams</b> at the college round of <b>HacXLerate 2026</b> (byteXL), as team Byte Syndicate from NBKRIST; advanced to Round 2, a 14-hour in-person buildathon in Hyderabad</li>
+    <li><b>Best Use Case of QSDC</b> award, QC&sup2; Quantum Computing Conclave National Hackathon, SRM University AP (team Quantum Insiders), for work on Quantum Superdense Coding</li>
+    <li>Built ResolveAI at <b>TechTatva 2K26</b> and kept developing it past the event</li>
+  </ul>
+
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <p><b>Languages:</b> Kotlin, TypeScript, JavaScript, Python, HTML/CSS</p>
+    <p><b>Frameworks and Libraries:</b> Jetpack Compose, Room, WorkManager, Next.js, React, Tailwind CSS, Vitest</p>
+    <p><b>AI and Automation:</b> Gemini API, n8n workflows, MediaPipe GenAI, Ollama</p>
+    <p><b>Cloud and Tools:</b> Vercel, Render, Google Play Console and Billing, Git/GitHub, GitHub Actions CI, Android Studio</p>
+  </div>
+</div>
+</body>
+</html>

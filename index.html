@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Joel Choppavarapu</title>
+<meta name="description" content="Joel Choppavarapu, founder of POPTLE: an Android app that sorts notifications by what actually deserves your attention.">
+<meta name="theme-color" content="#121212">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+<div class="sheet">
+  <div class="hero-art"><canvas id="halftone" aria-hidden="true"></canvas></div>
+
+  <main>
+    <div class="col">
+      <header class="intro">
+        <h1 class="name">Joel Choppavarapu</h1>
+        <p class="sub">Founder of <a class="link" href="https://poptle.com">POPTLE</a> · CS at NBKRIST</p>
+        <div class="bio">
+          <p>I missed a message from my mom because it was sitting under twelve promo notifications. That was the day <a class="link" href="https://play.google.com/store/apps/details?id=com.poptle.app">POPTLE</a> started: an Android app that decides what deserves your attention, so a bank OTP and a message from someone you love never get buried under a sale.</p>
+          <p>Most of what I build sits in that same space: software that reads the noise and decides what matters. Rules first, on-device AI next, the cloud only when it has to. A support inbox that routes angry customers before a human sees them. A monitor that catches fake copies of brands. I like honest accuracy numbers, free tiers pushed to their limit, and hackathon projects that keep going after the hackathon.</p>
+        </div>
+        <p class="contact">You can reach me by <a class="link" href="mailto:choppavarapujoel@gmail.com">email</a>, or find me on <a class="link" href="https://www.linkedin.com/in/joel-choppavarapu-424691303/">LinkedIn</a> and <a class="link" href="https://github.com/Joel-Judson-Paul77">GitHub</a>. If you'd rather have a PDF, here's my <a class="link" href="/JoelChoppavarapuResume.pdf">resume</a>.</p>
+        <p class="now">Now: HacXLerate Round 2, Hyderabad, 24 Oct</p>
+      </header>
+
+      <section class="proj-sec" aria-label="Work and projects">
+        <div class="rail">
+          <ul class="track">
+            <li class="proj">
+              <div class="art" data-sorter></div>
+              <p class="cap"><span class="t">POPTLE: notifications sorted into 4 attention zones</span> · live on <a class="link" href="https://play.google.com/store/apps/details?id=com.poptle.app">Google Play</a> · <a class="link" href="https://poptle.com">poptle.com</a></p>
+            </li>
+            <li class="proj">
+              <div class="art" data-sketch="poptle"></div>
+              <p class="cap"><span class="t">How POPTLE decides: rules, on-device AI, then cloud</span> · 2026–present · <a class="link" href="https://poptle.com">poptle.com</a></p>
+            </li>
+            <li class="proj">
+              <div class="art" data-sketch="clonex"></div>
+              <p class="cap"><span class="t">CloneX: brand impersonation monitor</span> · HacXLerate top 3 of 28 · <a class="link" href="https://github.com/Joel-Judson-Paul77/clonex">GitHub</a></p>
+            </li>
+            <li class="proj">
+              <div class="art" data-sketch="resolveai"></div>
+              <p class="cap"><span class="t">ResolveAI: support triage on n8n and Gemini</span> · TechTatva 2K26</p>
+            </li>
+            <li class="proj">
+              <div class="art" data-sketch="qsdc"></div>
+              <p class="cap"><span class="t">Quantum superdense coding</span> · award, SRM University AP · <a class="link" href="https://qec-dense.streamlit.app">Live demo</a> · <a class="link" href="https://github.com/Joel-Judson-Paul77/qec-dense">GitHub</a></p>
+            </li>
+          </ul>
+          <div class="fade l" aria-hidden="true"></div>
+          <div class="fade r" aria-hidden="true"></div>
+        </div>
+        <div class="arrows"><button id="prev" aria-label="Previous">←</button><button id="next" aria-label="Next">→</button></div>
+      </section>
+
+
+      <section class="list-sec" aria-label="Recognition">
+        <ul class="rows">
+          <li><a href="https://github.com/Joel-Judson-Paul77/clonex" data-icon="trophy"><span class="t">Top 3 of 28 teams, HacXLerate 2026 college round</span><span class="yr">2026</span></a></li>
+          <li><a href="https://qec-dense.streamlit.app" data-icon="atom"><span class="t">Best Use Case of QSDC, QC² National Hackathon, SRM AP</span><span class="yr">2026</span></a></li>
+          <li><a href="https://github.com/Joel-Judson-Paul77" data-icon="chat"><span class="t">ResolveAI, built at TechTatva 2K26</span><span class="yr">2026</span></a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="foot">
+      <p>Go on, draw something,<br>Joel</p>
+      <div class="links"><a class="link" href="mailto:choppavarapujoel@gmail.com">Email</a><a class="link" href="https://github.com/Joel-Judson-Paul77">GitHub</a><a class="link" href="https://www.linkedin.com/in/joel-choppavarapu-424691303/">LinkedIn</a></div>
+    </div>
+  </main>
+</div>
+
+<div class="wall">
+  <section aria-label="Drawing wall">
+    <div class="head"><h2>Leave something behind</h2><p>Anyone who visits can draw here. No account, no sign-up, no notifications. Promise.</p></div>
+    <div class="stage" id="stage"></div>
+    <div class="bar">
+      <button data-draw><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4z"/></svg>Draw something</button>
+      <a href="/drawings.html">View all drawings <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </section>
+</div>
+<script src="/site.js"></script>
+</body>
+</html>
